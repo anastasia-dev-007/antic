@@ -6,27 +6,25 @@
 
 .navigation-bar {
     display: flex;
-    width: 94px;
-    height: 25px;
-    top: 11.25px;
-    margin: 68.75px 252px 121.25px 150px;
     gap: 82px;
 }
 
 .navigation-bar-list {
     display: flex;
     list-style-type: none;
-    gap: 48px;
     color: #706458;
-
-}
+    font-family: Varta;
+    font-weight: 400;
+    font-size: 18px;
+    gap: 24px;
+    margin-top: 75px;
+    text-decoration: none;
+}  
 
 .section1 {
     background-color: #F3EEE8;
-    ;
-    display: flex;
     height: 900px;
-    width: 1505px;
+    display: flex;
 }
 
 .section1 h1,
@@ -37,38 +35,56 @@ h2 {
 }
 
 .section1 h1 {
-    margin: 285px 150px 30px 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-right: 150px;
+}
 
+.section1 a {
+    text-decoration: none; 
+    font-family: Merriweather;
+    color: #A06056;
+}
+
+.section1 h2 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 66.25px;
 }
 
 .section1 .section1-left-side {
     width: 50%;
-    height: 900px;
-    padding: 24px 150px 24px 150px;
-    gap: 48px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
 }
 
 .section1 .section1-right-side {
     width: 50%;
-    height: 1177px;
-    top: -100.63px;
-    left: 720px;
     background-image: url("/assets/media/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .section1 .par1 {
-    margin: 215px 150px 50px 150px;
     color: #A06056;
-    ;
+    font-family: varta;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 123.75px;
 }
 
 .section1 .par2 {
-    margin: 525px 150px 313px 150px;
     color: #706458;
-    ;
+    font-family: varta;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 313px;
+    margin-right: 150px;
 }

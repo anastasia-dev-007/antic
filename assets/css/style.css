@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar {
+    display: flex;
+    width: 94px;
+    height: 25px;
+    top: 11.25px;
+    margin: 68.75px 252px 121.25px 150px;
+    gap: 82px;
+}
+
+.navigation-bar-list {
+    display: flex;
+    list-style-type: none;
+    gap: 48px;
+    color: #706458;
+
+}
+
+.section1 {
+    background-color: #F3EEE8;
+    ;
+    display: flex;
+    height: 900px;
+    width: 1505px;
+}
+
+.section1 h1,
+h2 {
+    font-family: Merriweather;
+    color: #A06056;
+    ;
+}
+
+.section1 h1 {
+    margin: 285px 150px 30px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+
+}
+
+.section1 .section1-left-side {
+    width: 50%;
+    height: 900px;
+    padding: 24px 150px 24px 150px;
+    gap: 48px;
+}
+
+.section1 .section1-right-side {
+    width: 50%;
+    height: 1177px;
+    top: -100.63px;
+    left: 720px;
+    background-image: url("/assets/media/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg");
+    background-size: 100%;
+}
+
+.section1 .par1 {
+    margin: 215px 150px 50px 150px;
+    color: #A06056;
+    ;
+}
+
+.section1 .par2 {
+    margin: 525px 150px 313px 150px;
+    color: #706458;
+    ;
+}

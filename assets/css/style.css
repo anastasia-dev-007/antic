@@ -7,17 +7,23 @@
 .navigation-bar {
     display: flex;
     gap: 82px;
+    height: 25px;
+    width: 142px;
+    left: 176px;
+    top: 13.75px;
+    border-radius: 0px;
+    align-items: center;
 }
 
-.navigation-bar-list {
+
+.navigation-bar-list a:link,
+a:visited {
     display: flex;
     list-style-type: none;
     color: #706458;
     font-family: Varta;
     font-weight: 400;
     font-size: 18px;
-    gap: 24px;
-    margin-top: 75px;
     text-decoration: none;
 }
 
@@ -25,6 +31,28 @@
     background-color: #F3EEE8;
     height: 900px;
     display: flex;
+}
+
+.down-button {
+    border: 2px solid #A06056;
+border-radius: 50%;
+padding: 20px 20px 20px 20px;
+height: 15px;
+width: 15px;
+color: #A06056;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.down-button i{
+    color: #A06056;
+    height: 8.999975204467773px;
+width: 15.999975204467773px;
+left: 17px;
+top: 20.5px;
+border-radius: 0px;
+font-size: 16px;
 }
 
 .section1 h1,
@@ -84,7 +112,7 @@ h2 {
     font-size: 22px;
     font-weight: 300;
     margin-top: 30px;
-    margin-bottom: 313px;
+    margin-bottom: 68.5px;
     margin-right: 150px;
 }
 
@@ -303,6 +331,9 @@ a:visited {
 
 .section3-3 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 23px 0px 70px 0px;
 }
 
 .section3-3 h3 {
@@ -335,13 +366,54 @@ a:visited {
 }
 
 .section4 {
-    display: flex;
     background-color: #F3EEE8;
 }
 
 .section4-up {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 64px;
+    padding: 70px 150px 48px;
+}
+
+.section4-logo a:link,
+a:visited {
+    font-family: Merriweather;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #534B42;
+    text-decoration: none;
+}
+
+.section4-up h4 {
+    font-family: Varta;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #534B42;
+    margin-bottom: 22px;
+}
+
+.list li {
+    font-family: Varta;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
+    margin-bottom: 12px;
+}
+
+.section4 .section4-down .logos {
+    align-items: center;
+    gap: 24px;
 }
 
 .section4-lists {
@@ -349,7 +421,101 @@ a:visited {
     gap: 48px;
 }
 
-.section4 ul, li {
+.section4 ul,
+li {
     list-style-type: none;
     padding: 0px;
+}
+
+.section4 img {
+    width: 242.09px;
+    height: 182px;
+    margin-bottom: 9px;
+}
+
+.section4-up p {
+    font-family: Varta;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
+    padding-bottom: 15px;
+}
+
+.blog {
+    height: 369px;
+width: 235px;
+left: 905px;
+top: 0px;
+border-radius: 0px;
+
+}
+
+.section4-up .blog a:link,
+a:visited {
+    font-family: Karla;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #A06056;
+    text-decoration: none;
+    /*color attributed is not displayed*/
+}
+
+.section4-down {
+    padding: 0px 48px 0px 109px;
+}
+
+.social-network {
+    padding: 0px 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-network i {
+    height: 32px;
+    width: 32px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    color: #706458E5;
+    font-size: 32px;
+}
+
+.legals {
+    font-family: Varta;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color:#706458;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 20px 150px 64px 150px;
+}
+
+.legals ul, li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.legals a:link, a:visited {
+    text-decoration: none;
+    font-family: Varta;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color:#706458;
 }

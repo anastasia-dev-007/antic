@@ -327,7 +327,7 @@ h2 {
 
 
 .slide1 {
-    background-image: url(/assets/media/jean-philippe-delberghe-feijc-nqWKM-unsplash.jpg);
+    background-image: url(/assets/media/slide1.jpg);
     background-size: cover;
     width: 360px;
     height: 550px;
@@ -335,7 +335,7 @@ h2 {
 }
 
 .slide2 {
-    background-image: url(/assets/media/jorge-de-jorge-pHbAY99SRB4-unsplash.jp.jfif);
+    background-image: url(/assets/media/slide2.jfif);
     background-size: cover;
     width: 397.729px;
     height: 685px;
@@ -343,14 +343,12 @@ h2 {
 }
 
 .slide3 {
-    background-image: url(/assets/media/minh-pham-OtXADkUh3-I-unsplash.jpg);
+    background-image: url(/assets/media/slide3.jpg);
     background-size: cover;
     width: 485.333px;
     height: 815.867px;
     flex-shrink: 0;
 }
-
-
 
 .section3-3 {
     display: flex;

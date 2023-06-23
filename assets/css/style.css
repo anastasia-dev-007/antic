@@ -17,7 +17,7 @@
 
 
 .navigation-bar-list a:link,
-a:visited {
+.navigation-bar-list a:visited {
     display: flex;
     list-style-type: none;
     color: #706458;
@@ -35,24 +35,24 @@ a:visited {
 
 .down-button {
     border: 2px solid #A06056;
-border-radius: 50%;
-padding: 20px 20px 20px 20px;
-height: 15px;
-width: 15px;
-color: #A06056;
-display: flex;
-justify-content: center;
-align-items: center;
+    border-radius: 50%;
+    padding: 20px 20px 20px 20px;
+    height: 15px;
+    width: 15px;
+    color: #A06056;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.down-button i{
+.down-button i {
     color: #A06056;
     height: 8.999975204467773px;
-width: 15.999975204467773px;
-left: 17px;
-top: 20.5px;
-border-radius: 0px;
-font-size: 16px;
+    width: 15.999975204467773px;
+    left: 17px;
+    top: 20.5px;
+    border-radius: 0px;
+    font-size: 16px;
 }
 
 .section1 h1,
@@ -73,7 +73,7 @@ h2 {
     margin-right: 150px;
 }
 
-.section1 a {
+.logo a:link, .logo a:visited {
     text-decoration: none;
     font-family: Merriweather;
     color: #A06056;
@@ -120,12 +120,15 @@ h2 {
     display: flex;
     gap: 136px;
     background-color: #F3EEE8;
+    padding: 64px 150px 70px 150px;
 }
 
 .section2-left-side {
-    width: 50%;
-    padding-top: 84px;
-    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
 }
 
 .section2-left-side h1 {
@@ -133,7 +136,10 @@ h2 {
     font-weight: 300;
     font-size: 55px;
     color: #706458;
-    padding-bottom: 30px;
+    border: none;
+    width: 458px;
+    height: 188px;
+    line-height: 57px;
 }
 
 .section2-left-side p {
@@ -161,7 +167,7 @@ h2 {
 }
 
 .section2-right-side {
-    padding-top: 84px;
+
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -198,6 +204,8 @@ h2 {
 
 .section3-1 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .section3-1 .section3-left-side {
@@ -207,6 +215,8 @@ h2 {
 .section3-1 .section3-right-side {
     display: flex;
     gap: 16px;
+    flex-direction: row;
+    align-items: center;
 }
 
 .section3-1 input::placeholder {
@@ -224,7 +234,7 @@ h2 {
     width: 296.1px;
     height: 50px;
     radius: 1px;
-    background-color: #f3eee894;
+    background-color: rgba(243, 238, 232, 0.4);
     border: none;
 }
 
@@ -272,12 +282,12 @@ h2 {
     line-height: 25px;
     letter-spacing: 0px;
     text-align: left;
-    color: #706458E5;
+    color:rgba(112, 100, 88, 0.90);
     padding-bottom: 10px;
 }
 
 .section3-1 a:link,
-a:visited {
+.section3-1 a:visited {
     font-family: Karla;
     font-size: 17px;
     font-weight: 700;
@@ -303,7 +313,9 @@ a:visited {
 
 .section3-2 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .section3-2 div {
@@ -313,21 +325,32 @@ a:visited {
     height: 100%;
 }
 
-#pic1,
-#pic2,
-#pic3 {
-    height: 600px;
-    width: 400px;
+
+.slide1 {
+    background-image: url(/assets/media/jean-philippe-delberghe-feijc-nqWKM-unsplash.jpg);
+    background-size: cover;
+    width: 360px;
+    height: 550px;
+    flex-shrink: 0;
 }
 
-#pic1 {
-    height: 899.89013671875px;
-    width: 471.61572265625px;
-    left: 94.19189453125px;
-    top: -333px;
-    border-radius: 0px;
-    clip: rect(360px 550px 150px 360px);
+.slide2 {
+    background-image: url(/assets/media/jorge-de-jorge-pHbAY99SRB4-unsplash.jp.jfif);
+    background-size: cover;
+    width: 397.729px;
+    height: 685px;
+    flex-shrink: 0;
 }
+
+.slide3 {
+    background-image: url(/assets/media/minh-pham-OtXADkUh3-I-unsplash.jpg);
+    background-size: cover;
+    width: 485.333px;
+    height: 815.867px;
+    flex-shrink: 0;
+}
+
+
 
 .section3-3 {
     display: flex;
@@ -446,14 +469,14 @@ li {
 
 .blog {
     height: 369px;
-width: 235px;
-left: 905px;
-top: 0px;
-border-radius: 0px;
+    width: 235px;
+    left: 905px;
+    top: 0px;
+    border-radius: 0px;
 
 }
 
-.section4-up .blog a:link,
+.section4-up .blog a:link, .section4-up .blog
 a:visited {
     font-family: Karla;
     font-size: 17px;
@@ -490,32 +513,35 @@ a:visited {
 
 .legals {
     font-family: Varta;
-font-size: 18px;
-font-weight: 400;
-line-height: 25px;
-letter-spacing: 0px;
-text-align: left;
-color:#706458;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding: 20px 150px 64px 150px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 150px 64px 150px;
+    opacity: 0.7;
 }
 
-.legals ul, li {
+.legals ul,
+li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
 }
 
-.legals a:link, a:visited {
+.legals a:link,
+.legals :visited {
     text-decoration: none;
     font-family: Varta;
-font-size: 18px;
-font-weight: 400;
-line-height: 25px;
-letter-spacing: 0px;
-text-align: left;
-color:#706458;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
 }

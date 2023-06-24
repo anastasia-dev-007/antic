@@ -7,17 +7,42 @@
 .navigation-bar {
     display: flex;
     gap: 82px;
-    height: 25px;
-    width: 142px;
-    left: 176px;
-    top: 13.75px;
+    left: 150px;
+    top: 66.25px;
+    right: 150px;
     border-radius: 0px;
     align-items: center;
+    position: absolute;
 }
 
+.navigation-bar .logo {
+    font-size: 34px;
+    font-family: Merriweather;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #A06056;
+    text-decoration: none;
+}
 
-.navigation-bar-list a:link,
-.navigation-bar-list a:visited {
+.navigation-bar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation-bar-container i {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.navigation-bar-items {
+    display: flex;
+    gap: 26px;
+}
+
+.navigation-bar-items a:link,
+.navigation-bar-items a:visited {
     display: flex;
     list-style-type: none;
     color: #706458;
@@ -34,25 +59,8 @@
 }
 
 .down-button {
-    border: 2px solid #A06056;
-    border-radius: 50%;
-    padding: 20px 20px 20px 20px;
-    height: 15px;
-    width: 15px;
     color: #A06056;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.down-button i {
-    color: #A06056;
-    height: 8.999975204467773px;
-    width: 15.999975204467773px;
-    left: 17px;
-    top: 20.5px;
-    border-radius: 0px;
-    font-size: 16px;
+    font-size: 50px;
 }
 
 .section1 h1,
@@ -73,7 +81,8 @@ h2 {
     margin-right: 150px;
 }
 
-.logo a:link, .logo a:visited {
+.logo a:link,
+.logo a:visited {
     text-decoration: none;
     font-family: Merriweather;
     color: #A06056;
@@ -269,7 +278,7 @@ h2 {
     font-size: 35px;
     font-weight: 300;
     line-height: 40px;
-    letter-spacing: -0.30000001192092896px;
+    letter-spacing: -0.3px;
     text-align: left;
     color: #121212;
     padding-bottom: 15px;
@@ -282,7 +291,7 @@ h2 {
     line-height: 25px;
     letter-spacing: 0px;
     text-align: left;
-    color:rgba(112, 100, 88, 0.90);
+    color: rgba(112, 100, 88, 0.90);
     padding-bottom: 10px;
 }
 
@@ -292,15 +301,10 @@ h2 {
     font-size: 17px;
     font-weight: 700;
     line-height: 25px;
-    letter-spacing: 0.30000001192092896px;
+    letter-spacing: 0.3px;
     text-align: left;
     color: #A06056;
     text-decoration: none;
-}
-
-.section3-2 {
-    display: flex;
-    justify-content: space-between;
 }
 
 .section3 p {
@@ -313,9 +317,9 @@ h2 {
 
 .section3-2 {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 40px;
+    height: 550px;
 }
 
 .section3-2 div {
@@ -327,7 +331,7 @@ h2 {
 
 
 .slide1 {
-    background-image: url(/assets/media/slide1.jpg);
+    background-image: url("/assets/media/slide1.jpg");
     background-size: cover;
     width: 360px;
     height: 550px;
@@ -335,7 +339,7 @@ h2 {
 }
 
 .slide2 {
-    background-image: url(/assets/media/slide2.jfif);
+    background-image: url("/assets/media/slide2.jfif");
     background-size: cover;
     width: 397.729px;
     height: 685px;
@@ -343,10 +347,10 @@ h2 {
 }
 
 .slide3 {
-    background-image: url(/assets/media/slide3.jpg);
+    background-image: url("/assets/media/slide3.jpg");
     background-size: cover;
-    width: 485.333px;
-    height: 815.867px;
+    width: 485px;
+    height: 816px;
     flex-shrink: 0;
 }
 
@@ -367,7 +371,7 @@ h2 {
     font-size: 45px;
     font-weight: 300;
     line-height: 40px;
-    letter-spacing: -0.30000001192092896px;
+    letter-spacing: -0.3px;
     text-align: left;
     color: #534B42;
 }
@@ -474,8 +478,8 @@ li {
 
 }
 
-.section4-up .blog a:link, .section4-up .blog
-a:visited {
+.section4-up .blog a:link,
+.section4-up .blog a:visited {
     font-family: Karla;
     font-size: 17px;
     font-weight: 700;

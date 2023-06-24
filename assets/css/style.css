@@ -52,7 +52,7 @@
     text-decoration: none;
 }
 
-.section1 {
+.page-header {
     background-color: #F3EEE8;
     height: 900px;
     display: flex;
@@ -63,14 +63,14 @@
     font-size: 50px;
 }
 
-.section1 h1,
+.page-header h1,
 h2 {
     font-family: Merriweather;
     color: #A06056;
     ;
 }
 
-.section1 h1 {
+.page-header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,26 +88,26 @@ h2 {
     color: #A06056;
 }
 
-.section1 h2 {
+.page-header h2 {
     font-weight: 700;
     font-size: 34px;
     margin-top: 66.25px;
 }
 
-.section1 .section1-left-side {
+.page-header .page-header-left-side {
     width: 50%;
     padding: 60px 150px 0px;
 
 }
 
-.section1 .section1-right-side {
+.page-header .page-header-right-side {
     width: 50%;
     background-image: url("/assets/media/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.section1 .par1 {
+.page-header .par1 {
     color: #A06056;
     font-family: varta;
     font-size: 14px;
@@ -115,7 +115,7 @@ h2 {
     margin-top: 123.75px;
 }
 
-.section1 .par2 {
+.page-header .par2 {
     color: #706458;
     font-family: varta;
     font-size: 22px;
@@ -206,30 +206,30 @@ h2 {
     margin-bottom: 30px;
 }
 
-.section3 {
+.latest-trends {
     padding: 70px 149px;
 
 }
 
-.section3-1 {
+.latest-trends-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 64px;
 }
 
-.section3-1 .section3-left-side {
+.latest-trends-1 .latest-trends-left-side {
     padding-right: 204px;
 }
 
-.section3-1 .section3-right-side {
+.latest-trends-1 .latest-trends-right-side {
     display: flex;
     gap: 16px;
     flex-direction: row;
     align-items: center;
 }
 
-.section3-1 input::placeholder {
+.latest-trends-1 input::placeholder {
     font-family: Varta;
     font-size: 18px;
     font-weight: 400;
@@ -239,7 +239,7 @@ h2 {
     color: 706458;
 }
 
-.section3-1 input {
+.latest-trends-1 input {
     padding: 15px 15.1px 10px 15px;
     width: 296.1px;
     height: 50px;
@@ -248,7 +248,7 @@ h2 {
     border: none;
 }
 
-.section3-1 button span {
+.latest-trends-1 button span {
     height: 25px;
     width: 85px;
     left: 29.056640625px;
@@ -264,7 +264,7 @@ h2 {
 
 }
 
-.section3-1 button {
+.latest-trends-1 button {
     height: 50px;
     width: 143.11279296875px;
     left: 312.09521484375px;
@@ -274,7 +274,7 @@ h2 {
     background-color: #534B42;
 }
 
-.section3-1 h2 {
+.latest-trends-1 h2 {
     font-family: Merriweather;
     font-size: 35px;
     font-weight: 300;
@@ -285,7 +285,7 @@ h2 {
     padding-bottom: 15px;
 }
 
-.section3-1 p {
+.latest-trends-1 p {
     font-family: Varta;
     font-size: 18px;
     font-weight: 400;
@@ -296,8 +296,8 @@ h2 {
     padding-bottom: 10px;
 }
 
-.section3-1 a:link,
-.section3-1 a:visited {
+.latest-trends-1 a:link,
+.latest-trends-1 a:visited {
     font-family: Karla;
     font-size: 17px;
     font-weight: 700;
@@ -308,7 +308,7 @@ h2 {
     text-decoration: none;
 }
 
-.section3 p {
+.latest-trends p {
     font-family: Varta;
     font-weight: 400;
     font-size: 18px;
@@ -316,7 +316,7 @@ h2 {
     line-height: 25px;
 }
 
-.section3-2 {
+.latest-trends-2 {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -324,7 +324,7 @@ h2 {
     margin-bottom: 40px;
 }
 
-.section3-2 div {
+.latest-trends-2 div {
     display: flex;
     justify-content: space-between;
     width: 33.33%;
@@ -356,14 +356,13 @@ h2 {
     flex-shrink: 0;
 }
 
-.section3-3 {
+.latest-trends-3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 23px 0px 70px 0px;
 }
 
-.section3-3 h3 {
+.latest-trends-3 h3 {
     height: 75px;
     width: 360px;
     left: 0px;
@@ -378,7 +377,7 @@ h2 {
     color: #534B42;
 }
 
-.section3-3 p {
+.latest-trends-3 p {
     height: 75px;
     width: 750px;
     left: 390px;
@@ -392,11 +391,11 @@ h2 {
     text-align: left;
 }
 
-.section4 {
+.footer {
     background-color: #F3EEE8;
 }
 
-.section4-up {
+.footer-up {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -404,7 +403,7 @@ h2 {
     padding: 70px 150px 48px;
 }
 
-.section4-logo a:link,
+.footer-logo a:link,
 a:visited {
     font-family: Merriweather;
     font-size: 34px;
@@ -416,7 +415,7 @@ a:visited {
     text-decoration: none;
 }
 
-.section4-up h4 {
+.footer-up h4 {
     font-family: Varta;
     font-size: 25px;
     font-weight: 600;
@@ -438,29 +437,29 @@ a:visited {
     margin-bottom: 12px;
 }
 
-.section4 .section4-down .logos {
+.footer .footer-down .logos {
     align-items: center;
     gap: 24px;
 }
 
-.section4-lists {
+.footer-lists {
     display: flex;
     gap: 48px;
 }
 
-.section4 ul,
+.footer ul,
 li {
     list-style-type: none;
     padding: 0px;
 }
 
-.section4 img {
+.footer img {
     width: 242.09px;
     height: 182px;
     margin-bottom: 9px;
 }
 
-.section4-up p {
+.footer-up p {
     font-family: Varta;
     font-size: 16px;
     font-weight: 400;
@@ -480,8 +479,8 @@ li {
 
 }
 
-.section4-up .blog a:link,
-.section4-up .blog a:visited {
+.footer-up .blog a:link,
+.footer-up .blog a:visited {
     font-family: Karla;
     font-size: 17px;
     font-weight: 700;
@@ -493,7 +492,7 @@ li {
     /*color attributed is not displayed*/
 }
 
-.section4-down {
+.footer-down {
     padding: 0px 48px 0px 109px;
 }
 

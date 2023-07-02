@@ -11,567 +11,582 @@ body {
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
-@media screen and (min-width: 768px) {
-
-    .navigation-bar {
-        display: flex;
-        gap: 82px;
-        left: 150px;
-        top: 66.25px;
-        right: 150px;
-        border-radius: 0px;
-        align-items: center;
-        position: absolute;
-    }
-
-    .navigation-bar .logo {
-        font-size: 34px;
-        font-family: Merriweather;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 2px;
-        color: #A06056;
-        text-decoration: none;
-    }
-
-    .navigation-bar-container {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .navigation-bar-container i {
-        font-size: 24px;
-        color: #FFFFFF;
-    }
-
-    .navigation-bar-items {
-        display: flex;
-        gap: 26px;
-    }
-
-    .navigation-bar-items a:link,
-    .navigation-bar-items a:visited {
-        display: flex;
-        list-style-type: none;
-        color: #706458;
-        font-family: Varta;
-        font-weight: 400;
-        font-size: 18px;
-        text-decoration: none;
-    }
-
-    .page-header {
-        background-color: #F3EEE8;
-        height: 900px;
-        display: flex;
-    }
-
-    .down-button {
-        color: #A06056;
-        font-size: 50px;
-    }
-
-    .page-header h1,
-    h2 {
-        font-family: Merriweather;
-        color: #A06056;
-        ;
-    }
-
-    .page-header h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-repeat: no-repeat;
-        font-size: 50px;
-        font-weight: 300;
-        margin-top: 50px;
-        margin-right: 150px;
-    }
-
-    .logo a:link,
-    .logo a:visited {
-        text-decoration: none;
-        font-family: Merriweather;
-        color: #A06056;
-    }
-
-    .page-header h2 {
-        font-weight: 700;
-        font-size: 34px;
-        margin-top: 66.25px;
-    }
-
-    .page-header .page-header-left-side {
-        width: 50%;
-        padding: 60px 150px 0px;
-
-    }
-
-    #scroll2 {
-        display: none;
-    }
-
-    .page-header .page-header-right-side {
-        width: 50%;
-        background-image: url("/assets/media/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-
-    .page-header .par1 {
-        color: #A06056;
-        font-family: varta;
-        font-size: 14px;
-        font-weight: 700;
-        margin-top: 123.75px;
-    }
-
-    .page-header .par2 {
-        color: #706458;
-        font-family: varta;
-        font-size: 22px;
-        font-weight: 300;
-        margin-top: 30px;
-        margin-bottom: 68.5px;
-        margin-right: 150px;
-    }
-
-    .section2 {
-        display: flex;
-        gap: 136px;
-        background-color: #F3EEE8;
-        padding: 64px 150px 70px 150px;
-    }
-
-    .section2-left-side {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-        flex: 1 0 0;
-    }
-
-    .section2-left-side h1 {
-        font-family: Merriweather;
-        font-weight: 300;
-        font-size: 55px;
-        color: #706458;
-        border: none;
-        width: 458px;
-        height: 188px;
-        line-height: 57px;
-    }
-
-    .section2-left-side p {
-        font-family: Karla;
-        font-weight: 700;
-        font-size: 17px;
-        color: #A06056;
-        text-decoration: none;
-    }
-
-    .section2-left-side a:link {
-        font-family: Karla;
-        font-weight: 700;
-        font-size: 17px;
-        color: #A06056;
-        text-decoration: none;
-    }
-
-    .section2-left-side a:visited {
-        font-family: Karla;
-        font-weight: 700;
-        font-size: 17px;
-        color: #A06056;
-        text-decoration: none;
-    }
-
-    .section2-right-side {
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .section2-right-side h3 {
-        border: none;
-        width: 258.5px;
-        height: 30px;
-        color: #A06056;
-        font-family: Varta;
-        font-weight: 600;
-        font-size: 25px;
-        margin-bottom: 12px;
-    }
-
-    .section2-right-side p {
-        border: none;
-        width: 258.5px;
-        height: 125px;
-        color: #706458;
-        font-family: Varta;
-        font-weight: 400;
-        font-size: 18px;
-        margin-right: 29px;
-        margin-bottom: 30px;
-    }
-
-    .latest-trends {
-        padding: 70px 149px;
-
-    }
-
-    .latest-trends-1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 64px;
-    }
-
-    .latest-trends-1 .latest-trends-left-side {
-        padding-right: 204px;
-    }
-
-    .latest-trends-1 .latest-trends-right-side {
-        display: flex;
-        gap: 16px;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .latest-trends-1 input::placeholder {
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: 706458;
-    }
-
-    .latest-trends-1 input {
-        padding: 15px 15.1px 10px 15px;
-        width: 296.1px;
-        height: 50px;
-        border-radius: 1px;
-        background-color: rgba(243, 238, 232, 0.4);
-        border: none;
-    }
-
-    .latest-trends-1 button span {
-        height: 25px;
-        width: 85px;
-        left: 29.056640625px;
-        top: 12.5px;
-        border-radius: nullpx;
-        color: #FFFFFF;
-        font-family: Karla;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0.30000001192092896px;
-        text-align: center;
-
-    }
-
-    .latest-trends-1 button {
-        height: 50px;
-        width: 143.11279296875px;
-        left: 312.09521484375px;
-        top: 0px;
-        border-radius: 1px;
-        padding: 8px 30px 8px 30px;
-        background-color: #534B42;
-    }
-
-    .latest-trends-1 h2 {
-        font-family: Merriweather;
-        font-size: 35px;
-        font-weight: 300;
-        line-height: 40px;
-        letter-spacing: -0.3px;
-        text-align: left;
-        color: #121212;
-        padding-bottom: 15px;
-    }
-
-    .latest-trends-1 p {
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: rgba(112, 100, 88, 0.90);
-        padding-bottom: 10px;
-    }
-
-    .latest-trends-1 a:link,
-    .latest-trends-1 a:visited {
-        font-family: Karla;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0.3px;
-        text-align: left;
-        color: #A06056;
-        text-decoration: none;
-    }
-
-    .latest-trends p {
-        font-family: Varta;
-        font-weight: 400;
-        font-size: 18px;
-        color: #706458;
-        line-height: 25px;
-    }
-
-    .latest-trends-2 {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        height: 550px;
-        margin-bottom: 40px;
-        width: 100%;
-    }
-
-    .latest-trends-2 div {
-        display: flex;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    /* width: 380px; of all slides I changed in % for responsive design*/
-    .slide1 {
-        background-image: url("/assets/media/slide1.jpg");
-        background-size: cover;
-        width: 30%;
-        height: 550px;
-        flex-shrink: 0;
-    }
-
-    .slide2 {
-        background-image: url("/assets/media/slide2.jfif");
-        background-size: cover;
-        width: 30%;
-        height: 685px;
-        flex-shrink: 0;
-    }
-
-    .slide3 {
-        background-image: url("/assets/media/slide3.jpg");
-        background-size: cover;
-        width: 30%;
-        height: 816px;
-        flex-shrink: 0;
-    }
-
-    .latest-trends-3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .latest-trends-3 h3 {
-        height: 75px;
-        width: 360px;
-        left: 0px;
-        top: 0px;
-        border-radius: nullpx;
-        font-family: Merriweather;
-        font-size: 45px;
-        font-weight: 300;
-        line-height: 40px;
-        letter-spacing: -0.3px;
-        text-align: left;
-        color: #534B42;
-    }
-
-    .latest-trends-3 p {
-        height: 75px;
-        width: 750px;
-        left: 390px;
-        top: 0px;
-        border-radius: nullpx;
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-
-    .footer {
-        background-color: #F3EEE8;
-    }
-
-    .footer-up {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 64px;
-        padding: 70px 150px 48px;
-    }
-
-    .footer-logo a:link,
-    a:visited {
-        font-family: Merriweather;
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 2px;
-        text-align: left;
-        color: #534B42;
-        text-decoration: none;
-    }
-
-    .footer-up h4 {
-        font-family: Varta;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 30px;
-        letter-spacing: -0.20000000298023224px;
-        text-align: left;
-        color: #534B42;
-        margin-bottom: 22px;
-    }
-
-    .list a {
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #706458;
-        margin-bottom: 12px;
-        text-decoration: none;
-    }
-
-    .list a:hover {
-        text-decoration: underline;
-    }
-
-    .footer .footer-down .logos {
-        align-items: center;
-        gap: 24px;
-    }
-
-    .footer-lists {
-        display: flex;
-        gap: 48px;
-    }
-
-    .footer ul,
-    li {
-        list-style-type: none;
-        padding: 0px;
-    }
-
-    .footer img {
-        width: 242.09px;
-        height: 182px;
-        margin-bottom: 9px;
-    }
-
-    .footer-up p {
-        font-family: Varta;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #706458;
-        padding-bottom: 15px;
-    }
-
-    .blog {
-        height: 369px;
-        width: 100%;
-        left: 905px;
-        top: 0px;
-        border-radius: 0px;
-
-    }
-
-    .footer-up .blog a:link,
-    .footer-up .blog a:visited {
-        font-family: Karla;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0.30000001192092896px;
-        text-align: left;
-        color: #A06056;
-        text-decoration: none;
-        /*color attributed is not displayed*/
-    }
-
-    .footer-down {
-        padding: 0px 48px 0px 109px;
-    }
-
-    .social-network {
-        padding: 0px 470px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 24px;
-    }
-
-    .social-network i {
-        height: 32px;
-        width: 32px;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        color: #706458E5;
-        font-size: 32px;
-    }
-
-    .legals {
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #706458;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 150px 64px 150px;
-        opacity: 0.7;
-    }
-
-    .legals ul,
-    li {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 30px;
-    }
-
-    .legals a:link,
-    .legals :visited {
-        text-decoration: none;
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #706458;
-    }
-
-    .navigation-bar-container img {
-        display: none;
-    }
+.navigation-bar {
+    display: flex;
+    gap: 82px;
+    left: 150px;
+    top: 66.25px;
+    right: 150px;
+    border-radius: 0px;
+    align-items: center;
+    position: absolute;
+}
+
+.navigation-bar .logo {
+    font-size: 34px;
+    font-family: Merriweather;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #A06056;
+    text-decoration: none;
+}
+
+.navigation-bar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation-bar-container i {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.navigation-bar-items {
+    display: flex;
+    gap: 26px;
+}
+
+.navigation-bar-items a:link,
+.navigation-bar-items a:visited {
+    display: flex;
+    list-style-type: none;
+    color: #706458;
+    font-family: Varta;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.page-header {
+    background-color: #F3EEE8;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-header-content {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 150px;
+    display: flex;
+    position: relative;
+}
+
+.down-button {
+    color: #A06056;
+    font-size: 50px;
+}
+
+.page-header h1,
+h2 {
+    font-family: Merriweather;
+    color: #A06056;
+    ;
+}
+
+.page-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.logo a:link,
+.logo a:visited {
+    text-decoration: none;
+    font-family: Merriweather;
+    color: #A06056;
+}
+
+.page-header h2 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 66.25px;
+}
+
+.page-header .page-header-left-side {
+    width: 50%;
+}
+
+.page-header .page-header-left-side .page-header-left-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-right: 150px;
+}
+
+#scroll2 {
+    display: none;
+}
+
+.page-header .page-header-right-side {
+    width: 50%;
+    background-image: url("/assets/media/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.page-header .par1 {
+    color: #A06056;
+    font-family: varta;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.page-header .par2 {
+    color: #706458;
+    font-family: varta;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 68.5px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    background-color: #F3EEE8;
+}
+
+.section2 .section2-content {
+    max-width: 1440px;
+    width: 100%;
+    padding: 64px 150px 70px;
+    display: flex;
+    gap: 48px;
+}
+
+.section2-left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 50%;
+}
+
+.section2-left-side h1 {
+    font-family: Merriweather;
+    font-weight: 300;
+    font-size: 55px;
+    color: #706458;
+    border: none;
+    line-height: 57px;
+}
+
+.section2-left-side p {
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 17px;
+    color: #A06056;
+    text-decoration: none;
+}
+
+.section2-left-side a:link {
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 17px;
+    color: #A06056;
+    text-decoration: none;
+}
+
+.section2-left-side a:visited {
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 17px;
+    color: #A06056;
+    text-decoration: none;
+}
+
+.section2-right-side {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section2-right-side div {
+    width: 50%;
+}
+
+.section2-right-side h3 {
+    border: none;
+    width: 258.5px;
+    height: 30px;
+    color: #A06056;
+    font-family: Varta;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.section2-right-side p {
+    border: none;
+    color: #706458;
+    font-family: Varta;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 29px;
+    margin-bottom: 30px;
+}
+
+.latest-trends {
+    display: flex;
+    justify-content: center;
+}
+
+.latest-trends-content {
+    padding: 70px 150px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.latest-trends-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.latest-trends-1 .latest-trends-right-side {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.latest-trends-1 input::placeholder {
+    font-family: Varta;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: 706458;
+}
+
+.latest-trends-1 input {
+    padding: 15px 15px 10px;
+    width: 296px;
+    border-radius: 1px;
+    background-color: rgba(243, 238, 232, 0.4);
+    border: none;
+    color: rgba(112, 100, 88, 0.90);
+    font-size: 18px;
+    font-family: Varta;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.latest-trends-1 button span {
+    color: #FFFFFF;
+    font-family: Karla;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    text-align: center;
+
+}
+
+.latest-trends-1 button {
+    height: 50px;
+    border-radius: 1px;
+    padding: 8px 30px 8px 30px;
+    border: 0;
+    background-color: #534B42;
+}
+
+.latest-trends-1 h2 {
+    font-family: Merriweather;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #121212;
+    padding-bottom: 15px;
+}
+
+.latest-trends-1 p {
+    font-family: Varta;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(112, 100, 88, 0.90);
+    padding-bottom: 10px;
+}
+
+.latest-trends-1 a:link,
+.latest-trends-1 a:visited {
+    font-family: Karla;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #A06056;
+    text-decoration: none;
+}
+
+.latest-trends p {
+    font-family: Varta;
+    font-weight: 400;
+    font-size: 18px;
+    color: #706458;
+    line-height: 25px;
+}
+
+.latest-trends-2 {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.latest-trends-2 div {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* width: 380px; of all slides I changed in % for responsive design*/
+.slide1 {
+    background-image: url("/assets/media/slide1.jpg");
+    background-size: cover;
+    width: 30%;
+    height: 550px;
+    flex-shrink: 0;
+}
+
+.slide2 {
+    background-image: url("/assets/media/slide2.jfif");
+    background-size: cover;
+    width: 30%;
+    height: 685px;
+    flex-shrink: 0;
+}
+
+.slide3 {
+    background-image: url("/assets/media/slide3.jpg");
+    background-size: cover;
+    width: 30%;
+    height: 816px;
+    flex-shrink: 0;
+}
+
+.latest-trends-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-trends-3 h3 {
+    width: 360px;
+    left: 0px;
+    top: 0px;
+    border-radius: nullpx;
+    font-family: Merriweather;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #534B42;
+}
+
+.latest-trends-3 p {
+    height: 75px;
+    width: 750px;
+    left: 390px;
+    top: 0px;
+    border-radius: nullpx;
+    font-family: Varta;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.footer {
+    background-color: #F3EEE8;
+}
+
+.footer-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+    padding: 70px 150px 48px;
+}
+
+.footer-logo a:link,
+a:visited {
+    font-family: Merriweather;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #534B42;
+    text-decoration: none;
+}
+
+.footer-up h4 {
+    font-family: Varta;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #534B42;
+    margin-bottom: 22px;
+}
+
+.list a {
+    font-family: Varta;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-down .logos {
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-lists {
+    display: flex;
+    gap: 48px;
+}
+
+.footer ul,
+li {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer img {
+    width: 242.09px;
+    height: 182px;
+    margin-bottom: 9px;
+}
+
+.footer-up p {
+    font-family: Varta;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
+    padding-bottom: 15px;
+}
+
+.blog {
+    height: 369px;
+    width: 100%;
+    left: 905px;
+    top: 0px;
+    border-radius: 0px;
+
+}
+
+.footer-up .blog a:link,
+.footer-up .blog a:visited {
+    font-family: Karla;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #A06056;
+    text-decoration: none;
+    /*color attributed is not displayed*/
+}
+
+.footer-down {
+    padding: 0px 48px 0px 109px;
+}
+
+.social-network {
+    padding: 0px 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-network i {
+    height: 32px;
+    width: 32px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    color: #706458E5;
+    font-size: 32px;
+}
+
+.legals {
+    font-family: Varta;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 150px 64px 150px;
+    opacity: 0.7;
+}
+
+.legals ul,
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.legals a:link,
+.legals :visited {
+    text-decoration: none;
+    font-family: Varta;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #706458;
+}
+
+.navigation-bar-container img {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -1021,7 +1036,8 @@ body {
 
     /*to think tommorow*/
 
-    .legals ul, .legals li {
+    .legals ul,
+    .legals li {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1061,6 +1077,3 @@ body {
     }
 
 }
-
-  
-

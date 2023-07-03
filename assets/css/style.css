@@ -426,6 +426,12 @@ h2 {
     background-color: #F3EEE8;
 }
 
+.footer-container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer-up {
     display: flex;
     flex-direction: row;
@@ -481,6 +487,7 @@ a:visited {
 .footer-lists {
     display: flex;
     gap: 48px;
+
 }
 
 .footer ul,
@@ -508,9 +515,7 @@ li {
 
 .blog {
     height: 369px;
-    width: 100%;
-    left: 905px;
-    top: 0px;
+    width: 235px;
     border-radius: 0px;
 
 }
@@ -590,98 +595,80 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+
+    .navigation-bar-container{
+        justify-content: flex-end;
+    }
+
     .navigation-bar {
-        display: flex;
-        border-radius: 0px;
-        align-items: center;
-        position: absolute;
-        justify-content: space-between;
-        padding: 41px 32px 0px 22px;
+        padding: 61px 52px 0px 42px; 
+        /*am fost nevoita aici la padding sa mai adaug cate 20px ca sa iasa ca in design, caci cu acele paddings nu se primea vizual ca in design. E ok asa?*/
         width: 100%;
         height: 45px;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        gap: 0px;
+       
+
+    }
+
+    .navigation-bar-container img {
+        display: flex;
+        justify-content: space-between;
+        text-align: end;
+    }
+
+    .navigation-bar .logo {
+        color: var(--color-color-white, #FFF);
+    }
+
+    .page-header-content,
+    .section2 .section2-content,
+    .latest-trends-content,
+    .footer-up,
+    .footer-down,
+    .legals {
+        padding: 0px;
+    }
+
+    .page-header-right-side {
+        display: none;
+    }
+
+    .page-header .page-header-left-side {
+        background-image: url("/assets/media/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 25px;
+        width: 100%;
     }
 
     .navigation-bar-items {
         display: none;
     }
 
-    .navigation-bar-container i {
+    .fa-solid {
         display: none;
     }
 
-    .logo {
-        color: var(--color-color-white, #FFF);
-        font-size: 34px;
-        font-family: Merriweather;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 2px;
-        text-decoration: none;
-    }
-
-    .page-header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .page-header .page-header-left-side,
-    .page-header .page-header-right-side {
-        width: 100%;
-    }
-
-    .page-header-left-side div {
-        display: flex;
-        width: 100%;
-        height: 667px;
-        padding: 25px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 24px;
-        flex-shrink: 0;
-        background-image: url("/assets/media/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg");
-        background-size: cover;
-    }
-
-    .page-header .par1 {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        align-self: stretch;
-        color: var(--color-color-white, #FFF);
-        text-align: center;
-        font-size: 14px;
-        font-family: Varta;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
-
-    .page-header h1 {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        align-self: stretch;
-        color: var(--color-color-white, #FFF);
-        text-align: center;
-        font-size: 35px;
-        font-family: Merriweather;
-        font-weight: 300;
-        line-height: 40px;
-        letter-spacing: -0.3px;
-    }
-
+    .page-header .par1,
     .page-header .par2 {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        align-self: stretch;
-        color: var(--base-color-hight-grey, #F7F8F9);
-        text-align: center;
+        color: white;
         font-size: 18px;
-        font-family: Varta;
-        line-height: 25px;
+        text-align: center;
+    }
+
+    .page-header-left-side-container h1 {
+        color: white;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .page-header .page-header-left-side .page-header-left-side-container {
+        justify-content: center;
+        padding-right: 0px;
+        text-align: center;
     }
 
     #scroll1 {
@@ -700,77 +687,36 @@ li {
         flex-shrink: 0;
         border-radius: 100px;
         border: 2px solid var(--color-color-white, #FFF);
+        margin: 0 auto;
     }
 
-    .section2 .section2-left-side .section2-right-side {
-        width: 100%;
-    }
-
-    .section2 {
+    .section2 .section2-content {
         display: flex;
-        width: 100%;
-        padding: 48px 32px;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 32px;
-        background: var(--cream, #F3EEE8);
+        padding: 48px 32px;
+    }
+
+    .section2-left-side,
+    .section2-right-side {
+        width: 100%;
     }
 
     .section2-left-side h1 {
-        display: flex;
-        flex-direction: column;
-        align-self: stretch;
-        color: var(--brown-dark, #534B42);
         font-size: 35px;
         font-family: Merriweather;
         line-height: 40px;
         letter-spacing: -0.3px;
-        margin-bottom: 32px;
-    }
-
-    .section2-left-side a:link {
-        font-family: Lato;
-        font-weight: 900;
-        font-size: 17px;
-        color: #A06056;
-        text-decoration: none;
-        line-height: 25px;
-        letter-spacing: 0.3px;
-    }
-
-    .section2-left-side a:visited {
-        font-family: Lato;
-        font-weight: 900;
-        font-size: 17px;
-        color: #A06056;
-        text-decoration: none;
-        line-height: 25px;
-        letter-spacing: 0.3px;
     }
 
     .section2-right-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2-right-side div {
         width: 100%;
-        gap: 40px;
     }
 
-    .section2-right-side h3 {
-        border: none;
-        color: #A06056;
-        font-family: Varta;
-        font-weight: 600;
-        font-size: 25px;
-    }
-
-    .section2-right-side p {
-        border: none;
-        color: #706458;
-        font-family: Varta;
-        font-weight: 400;
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
-
-    /*start-aici am incercat sa schimb ordinea partea 2 cu 3*/
     .latest-trends {
         padding: 48px 32px;
         display: flex;
@@ -797,49 +743,16 @@ li {
         order: 2;
     }
 
-    /*end-aici am incercat sa schimb ordinea partea 2 cu 3*/
-
-
-    .latest-trends h2 {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        color: var(--on-background-primary, #121212);
-        font-size: 35px;
-        font-family: Merriweather;
-        font-weight: 300;
-        line-height: 40px;
-        letter-spacing: -0.3px;
-    }
-
-    .latest-trends p {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        color: var(--brown-light, rgba(112, 100, 88, 0.90));
-        font-size: 18px;
-        font-family: Varta;
-        line-height: 25px;
-        margin-bottom: 16px;
-        margin-top: 16px;
-    }
-
-    .latest-trends h3 {
-        display: flex;
-        flex-direction: column;
-        align-self: stretch;
-        color: var(--brown-dark, #534B42);
-        font-size: 35px;
-        font-family: Merriweather;
-        line-height: 40px;
-        letter-spacing: -0.3px;
+    .latest-trends-1 {
+        margin-bottom: 0px;
     }
 
     .latest-trends-1 .latest-trends-right-side {
-        gap: 16px;
+        display: initial;
         align-items: center;
         margin-top: 32px;
         margin-bottom: 64px;
+        gap: 0px;
     }
 
     .latest-trends-1 input::placeholder {
@@ -884,196 +797,67 @@ li {
         gap: 10px;
         border-radius: 1px;
         background: var(--brown-dark, #534B42);
-
     }
 
-    .latest-trends-1 a:link,
-    .latest-trends-1 a:visited {
-        font-family: Karla;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0.3px;
-        text-align: left;
-        color: #A06056;
-        text-decoration: none;
-    }
-
-    .slide1 {
-        background-image: url("/assets/media/slide1.jpg");
-        background-size: cover;
+    .latest-trends-2 div {
         width: 100%;
         height: 200px;
+        background-size: cover;
+        background-position: center;
         margin-bottom: 20px;
-        background-position: center;
     }
 
-    .slide2 {
-        background-image: url("/assets/media/slide2.jfif");
-        background-size: cover;
-        width: 100%;
-        height: 200px;
-        margin-bottom: 20px;
-        background-position: center;
+    .latest-trends-2 {
+        height: auto;
     }
 
-    .slide3 {
-        background-image: url("/assets/media/slide3.jpg");
-        background-size: cover;
+    /*how to swap section 2 with 3 in latest trends?*/
+
+    .latest-trends-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .latest-trends-3 p {
         width: 100%;
-        height: 200px;
-        background-position: center;
     }
 
     .footer {
-        height: 1752px;
         padding: 48px 32px;
         align-items: center;
         gap: 40px;
-        background: var(--cream, #F3EEE8);
     }
 
     .footer-logo {
-        text-align: center;
+        margin: 0 auto;
     }
 
-    .footer-logo a:link,
-    .footer-logo a:visited {
-        font-family: Merriweather;
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 2px;
-        text-align: left;
-        color: #534B42;
-        text-decoration: none;
-        text-align: center;
+    .footer-up, .footer-lists {
+        flex-direction: column;
+        gap: 40px;
     }
 
-    .footer ul,
-    li {
-        list-style-type: none;
-        padding: 0px;
-        line-height: 40px;
-    }
-
-    .list a {
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #706458;
-        margin-bottom: 12px;
-        text-decoration: none;
-    }
-
-    .list a:hover {
-        text-decoration: underline;
-    }
-
-    .list {
-        margin-bottom: 40px;
-    }
-
-    .footer-up h4 {
-        color: var(--on-background-primary, #121212);
-        font-size: 25px;
-        font-family: Varta;
-        font-weight: 600;
-        line-height: 30px;
-        letter-spacing: -0.2px;
-        margin-bottom: 12px;
-    }
+    /*imaginea si paragraful nu se primesc ca in design*/
 
     .blog img {
-        width: 307.783px;
+        width: 100%;
         height: 192px;
         flex-shrink: 0;
     }
+.social-network {
+    padding: 0px;
+}
+    
+.legals {
+    flex-direction: column-reverse;
+    gap: 32px;
+}
 
-    .blog p {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        color: var(--on-background-secondary, rgba(0, 0, 0, 0.45));
-        font-size: 18px;
-        font-family: Varta;
-        line-height: 25px;
-    }
+.legals ul, li {
+    justify-content: flex-start;
+}
 
-    .footer-up .blog a:link,
-    .footer-up .blog a:visited {
-        font-family: Karla;
-        font-size: 17px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0.30000001192092896px;
-        text-align: center;
-        color: #A06056;
-        text-decoration: none;
-        /*color attributed is not displayed*/
-    }
-
-    .social-network {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px 0px;
-        margin-top: 10px;
-    }
-
-    .social-network i {
-        height: 32px;
-        width: 32px;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        color: #706458E5;
-        font-size: 32px;
-    }
-
-    /*to think tommorow*/
-
-    .legals ul,
-    .legals li {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 24px;
-        margin-bottom: 5px;
-    }
-
-    .legals a:link,
-    .legals :visited {
-        text-decoration: none;
-        font-family: Varta;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #706458;
-    }
-
-    .legals p {
-        display: flex;
-        flex-direction: column;
-        color: var(--brown-light, rgba(112, 100, 88, 0.90));
-        font-size: 18px;
-        font-family: Varta;
-        line-height: 25px;
-        text-align: center;
-        padding-bottom: 5px;
-        text-align: center;
-    }
-
-    .legals {
-        display: flex;
-        flex-direction: column-reverse;
-        flex: wrap;
-    }
 
 }

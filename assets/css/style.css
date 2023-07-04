@@ -596,12 +596,12 @@ li {
 
 @media screen and (max-width: 768px) {
 
-    .navigation-bar-container{
+    .navigation-bar-container {
         justify-content: flex-end;
     }
 
     .navigation-bar {
-        padding: 61px 52px 0px 42px; 
+        padding: 61px 52px 0px 42px;
         /*am fost nevoita aici la padding sa mai adaug cate 20px ca sa iasa ca in design, caci cu acele paddings nu se primea vizual ca in design. E ok asa?*/
         width: 100%;
         height: 45px;
@@ -609,14 +609,16 @@ li {
         right: 0px;
         top: 0px;
         gap: 0px;
-       
-
     }
 
     .navigation-bar-container img {
         display: flex;
         justify-content: space-between;
         text-align: end;
+    }
+
+    .navigation-bar-container .fa-solid {
+        display: none;
     }
 
     .navigation-bar .logo {
@@ -717,34 +719,39 @@ li {
         width: 100%;
     }
 
-    .latest-trends {
+    .latest-trends-content {
         padding: 48px 32px;
-        display: flex;
-        flex-direction: column;
-        flex: wrap;
     }
 
+    .latest-trends-content,
     .latest-trends-1,
     .latest-trends-2,
     .latest-trends-3 {
-        flex: 1 0 0;
-        flex-direction: column;
+        display: block;
     }
 
-    .latest-trends-1:nth-child(1) {
+    .latest-trends .latest-trends-1 {
         order: 1;
     }
 
-    .latest-trends-2:nth-child(2) {
+    .latest-trends .latest-trends-2 {
         order: 3;
     }
 
-    .latest-trends-3:nth-child(3) {
+   .latest-trends .latest-trends-3 {
         order: 2;
     }
 
     .latest-trends-1 {
         margin-bottom: 0px;
+    }
+
+    .latest-trends-1 button {
+        margin-bottom: 64px;
+    }
+
+    .latest-trends-1 form {
+        margin-top: 32px;
     }
 
     .latest-trends-1 .latest-trends-right-side {
@@ -822,6 +829,7 @@ li {
 
     .latest-trends-3 p {
         width: 100%;
+        height: 100%;
     }
 
     .footer {
@@ -834,7 +842,8 @@ li {
         margin: 0 auto;
     }
 
-    .footer-up, .footer-lists {
+    .footer-up,
+    .footer-lists {
         flex-direction: column;
         gap: 40px;
     }
@@ -846,18 +855,20 @@ li {
         height: 192px;
         flex-shrink: 0;
     }
-.social-network {
-    padding: 0px;
-}
-    
-.legals {
-    flex-direction: column-reverse;
-    gap: 32px;
-}
 
-.legals ul, li {
-    justify-content: flex-start;
-}
+    .social-network {
+        padding: 0px;
+    }
+
+    .legals {
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
+    .legals ul,
+    li {
+        justify-content: flex-start;
+    }
 
 
 }

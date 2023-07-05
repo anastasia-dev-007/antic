@@ -724,26 +724,24 @@ li {
         padding: 48px 32px;
     }
 
-    .latest-trends-content,
-    .latest-trends-1,
-    .latest-trends-2,
-    .latest-trends-3 {
-        display: block;
+    .latest-trends-content {
+        display: flex;
+        flex-direction: column;
     }
 
-    .latest-trends .latest-trends-1 {
-        order: 1;
-    }
-
-    .latest-trends .latest-trends-2 {
+  .latest-trends-2 {
         order: 3;
+        display: block;
+        margin-bottom: 0px;
     }
 
-   .latest-trends .latest-trends-3 {
+ .latest-trends-3 {
         order: 2;
+        margin-bottom: 40px;
     }
 
     .latest-trends-1 {
+        display: block;
         margin-bottom: 0px;
     }
 
@@ -782,7 +780,8 @@ li {
         border: none;
         border-radius: 1px;
         background: rgba(243, 238, 232, 0.30);
-        width: 311px;
+        width: 100%;
+
     }
 
     .latest-trends-1 button span {
@@ -797,7 +796,7 @@ li {
 
     .latest-trends-1 button {
         display: flex;
-        width: 311px;
+        width: 100%;
         height: 50px;
         padding: 12px 30px 13px 30px;
         justify-content: center;

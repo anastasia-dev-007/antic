@@ -874,3 +874,101 @@ li {
 
 
 }
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .footer-up {
+    display: block;
+  }  
+  .latest-trends-3 p {
+    width: 100%;
+  }
+
+  .social-network {
+    padding: 0px;
+  }
+
+  .page-header h1{
+    font-size: 40px;
+  }
+    .page-header .page-header-left-side .page-header-left-side-container {
+    margin-top: 150px;
+  }
+
+  .page-header {
+    padding-left: 80px;
+  }
+
+  .navigation-bar-items {
+    display: none;
+  }
+
+  .page-header-content {
+    padding-left: 50px;
+  }
+  
+  .navigation-bar-container {
+  justify-content: flex-end;
+}
+
+.page-header .page-header-left-side .page-header-left-side-container {
+    height: 73%;
+}
+
+.navigation-bar {
+left: 0px;
+right: 0px;
+justify-content: space-between;
+width: 90%;
+margin: 0px 50px;
+}
+
+.page-header .par2{
+    margin-bottom: 58px;
+}
+
+.section2 .section2-content{
+    display: block;
+}
+.section2-left-side, .section2-right-side, .blog {
+    width: 100%;
+}
+.section2-left-side{
+    margin-bottom: 20px;
+}
+
+.section2 .section2-content {
+    padding: 0px 150px;
+}
+[class*="latest-trends-"] {
+    display: block
+}
+[class*="slide"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.latest-trends-2 div {
+    height: 30%;
+    background-position: center;
+    
+}
+
+.latest-trends-3 h3{
+    margin-bottom: 20px;
+}
+
+.footer-lists {
+    justify-content: space-between;
+}
+
+.social-network {
+    margin: 0px 0px 20px 0px;
+}
+.legals, .footer-down {
+    padding: 0px 150px 20px 150px;
+}
+
+.page-header {
+    height: 750px;
+}
+}

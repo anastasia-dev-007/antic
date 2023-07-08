@@ -395,7 +395,6 @@ h2 {
 }
 
 .latest-trends-3 h3 {
-    width: 360px;
     left: 0px;
     top: 0px;
     border-radius: nullpx;
@@ -602,13 +601,12 @@ li {
     }
 
     .navigation-bar {
-        padding: 61px 52px 0px 42px;
-        /*am fost nevoita aici la padding sa mai adaug cate 20px ca sa iasa ca in design, caci cu acele paddings nu se primea vizual ca in design. E ok asa?*/
+        padding: 0px 32px;
         width: 100%;
         height: 45px;
         left: 0px;
         right: 0px;
-        top: 0px;
+        top: 61px;
         gap: 0px;
     }
 
@@ -729,13 +727,13 @@ li {
         flex-direction: column;
     }
 
-  .latest-trends-2 {
+    .latest-trends-2 {
         order: 3;
         display: block;
         margin-bottom: 0px;
     }
 
- .latest-trends-3 {
+    .latest-trends-3 {
         order: 2;
         margin-bottom: 40px;
     }
@@ -851,7 +849,7 @@ li {
     .blog {
         width: 100%;
     }
-    
+
     .blog img {
         width: 307px;
         height: 192px;
@@ -876,99 +874,111 @@ li {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1080px) {
-  .footer-up {
-    display: block;
-  }  
-  .latest-trends-3 p {
-    width: 100%;
-  }
+    .footer-up {
+        display: block;
+    }
 
-  .social-network {
-    padding: 0px;
-  }
+    .latest-trends-3 p {
+        width: 100%;
+    }
 
-  .page-header h1{
-    font-size: 40px;
-  }
+    .social-network {
+        padding: 0px;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+
     .page-header .page-header-left-side .page-header-left-side-container {
-    margin-top: 150px;
-  }
+        margin-top: 150px;
+    }
 
-  .page-header {
-    padding-left: 80px;
-  }
+    .page-header {
+        padding-left: 80px;
+    }
 
-  .navigation-bar-items {
-    display: none;
-  }
+    .navigation-bar-items {
 
-  .page-header-content {
-    padding-left: 50px;
-  }
-  
-  .navigation-bar-container {
-  justify-content: flex-end;
-}
+        
+        display: none;
+    }
 
-.page-header .page-header-left-side .page-header-left-side-container {
-    height: 73%;
-}
+    .page-header-content {
+        padding-left: 50px;
+    }
 
-.navigation-bar {
-left: 0px;
-right: 0px;
-justify-content: space-between;
-width: 90%;
-margin: 0px 50px;
-}
+    .navigation-bar-container {
+        justify-content: flex-end;
+    }
 
-.page-header .par2{
-    margin-bottom: 58px;
-}
+    .page-header .page-header-left-side .page-header-left-side-container {
+        height: 73%;
+    }
 
-.section2 .section2-content{
-    display: block;
-}
-.section2-left-side, .section2-right-side, .blog {
-    width: 100%;
-}
-.section2-left-side{
-    margin-bottom: 20px;
-}
+    .navigation-bar {
+        left: 0px;
+        right: 0px;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0px 50px;
+    }
 
-.section2 .section2-content {
-    padding: 0px 150px;
-}
-[class*="latest-trends-"] {
-    display: block
-}
-[class*="slide"] {
-    width: 100%;
-    margin-bottom: 20px;
-}
+    .page-header .par2 {
+        margin-bottom: 58px;
+    }
 
-.latest-trends-2 div {
-    height: 30%;
-    background-position: center;
-    
-}
+    .section2 .section2-content {
+        display: block;
+    }
 
-.latest-trends-3 h3{
-    margin-bottom: 20px;
-}
+    .section2-left-side,
+    .section2-right-side,
+    .blog {
+        width: 100%;
+    }
 
-.footer-lists {
-    justify-content: space-between;
-}
+    .section2-left-side {
+        margin-bottom: 20px;
+    }
 
-.social-network {
-    margin: 0px 0px 20px 0px;
-}
-.legals, .footer-down {
-    padding: 0px 150px 20px 150px;
-}
+    .section2 .section2-content {
+        padding: 0px 150px;
+    }
 
-.page-header {
-    height: 750px;
-}
+    [class*="latest-trends-"] {
+        display: block
+    }
+
+    [class*="slide"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .latest-trends-2 div {
+        height: 30%;
+        background-position: center;
+
+    }
+
+    .latest-trends-3 h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer-lists {
+        justify-content: space-between;
+    }
+
+    .social-network {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .legals,
+    .footer-down {
+        padding: 0px 150px 20px 150px;
+    }
+
+    .page-header {
+        height: 750px;
+    }
 }
